@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -101,3 +102,114 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Custom animations for Veridian Foods */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(234, 88, 12, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(234, 88, 12, 0.8);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.6s ease-out;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s infinite;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ea580c;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #dc2626;
+}
+
+/* Focus states for better accessibility */
+.focus\:ring-orange-500:focus {
+  --tw-ring-color: rgb(249 115 22 / var(--tw-ring-opacity));
+}
+
+/* Custom gradient backgrounds */
+.gradient-orange-green {
+  background: linear-gradient(135deg, #fed7aa 0%, #dcfce7 100%);
+}
+
+.gradient-blue-green {
+  background: linear-gradient(135deg, #dbeafe 0%, #dcfce7 100%);
+}
+</lov-css>
+
+Now let me update the HTML title to be more descriptive.
+
+<lov-write file_path="index.html">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veridian Foods - Crafting Tomorrow's Flavours Today | Rich. Ready. Reliable.</title>
+    <meta name="description" content="Veridian Foods - A world-class food processing facility rooted in tradition and driven by innovation. Authentic Indian gravies, sauces, pickles, and spreads for global kitchens." />
+    <meta name="author" content="Veridian Foods" />
+    <meta name="keywords" content="Indian food processing, gravies, sauces, pickles, spreads, food manufacturing, Gujarat, Janpath Group, authentic Indian flavours, export quality food" />
+
+    <meta property="og:title" content="Veridian Foods - Crafting Tomorrow's Flavours Today" />
+    <meta property="og:description" content="A world-class food processing facility rooted in tradition and driven by innovation. Rich. Ready. Reliable." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@veridian_foods" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
