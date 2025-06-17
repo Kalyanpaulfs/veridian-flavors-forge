@@ -183,33 +183,3 @@ html {
 .gradient-blue-green {
   background: linear-gradient(135deg, #dbeafe 0%, #dcfce7 100%);
 }
-</lov-css>
-
-Now let me update the HTML title to be more descriptive.
-
-<lov-write file_path="index.html">
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Veridian Foods - Crafting Tomorrow's Flavours Today | Rich. Ready. Reliable.</title>
-    <meta name="description" content="Veridian Foods - A world-class food processing facility rooted in tradition and driven by innovation. Authentic Indian gravies, sauces, pickles, and spreads for global kitchens." />
-    <meta name="author" content="Veridian Foods" />
-    <meta name="keywords" content="Indian food processing, gravies, sauces, pickles, spreads, food manufacturing, Gujarat, Janpath Group, authentic Indian flavours, export quality food" />
-
-    <meta property="og:title" content="Veridian Foods - Crafting Tomorrow's Flavours Today" />
-    <meta property="og:description" content="A world-class food processing facility rooted in tradition and driven by innovation. Rich. Ready. Reliable." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@veridian_foods" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
-
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
